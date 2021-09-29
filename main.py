@@ -32,7 +32,7 @@ def get_cmmdc_v1(x, y):
 Returneaza CMMDC a doua numere x si y folosind al doilea algoritm.
 '''
 def get_cmmdc_v2(x, y):
-  print("hello world")
+  print("SOFRAAAN")
   
   
 def main():
