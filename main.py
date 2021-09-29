@@ -16,7 +16,11 @@ def is_prime(n):
 Returneaza produsul numerelor din lista lst.
 '''
 def get_product(lst):
-  print("hai")
+  prod = 1
+  for i in lst:
+    prod = prod * i
+  return prod
+
 
 
   
@@ -40,3 +44,5 @@ def main():
 
 if __name__ == '__main__':
   main()
+  lst = [1,2 ,3 ,4]
+  print(get_product(lst))
