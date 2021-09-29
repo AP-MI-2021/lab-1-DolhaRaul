@@ -29,9 +29,13 @@ def get_product(lst):
 Returneaza CMMDC a doua numere x si y folosind primul algoritm.
 '''
 def get_cmmdc_v1(x, y):
-  print("hello world")
-  
-  
+  r = x % y
+  while y != 0:
+    r = x % y
+    x = y
+    y = r
+  return x
+
 '''
 Returneaza CMMDC a doua numere x si y folosind al doilea algoritm.
 '''
@@ -44,5 +48,4 @@ def main():
 
 if __name__ == '__main__':
   main()
-  lst = [1,2 ,3 ,4]
-  print(get_product(lst))
+print(get_cmmdc_v1(8, 9))
