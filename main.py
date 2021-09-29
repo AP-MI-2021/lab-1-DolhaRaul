@@ -40,12 +40,15 @@ def get_cmmdc_v1(x, y):
 Returneaza CMMDC a doua numere x si y folosind al doilea algoritm.
 '''
 def get_cmmdc_v2(x, y):
-  print("SOFRAAAN")
-  
-  
+  while x != y:
+    if(x > y):
+      x = x - y
+    else:
+      y = y - x
+  return x
 def main():
-  print("hello world")
 
-if __name__ == '__main__':
+#if __name__ == '__main__':
   main()
 print(get_cmmdc_v1(8, 9))
+print (get_cmmdc_v2(8, 10))
