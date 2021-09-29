@@ -2,7 +2,15 @@
 Returneaza true daca n este prim si false daca nu.
 '''
 def is_prime(n):
-  print("hello world")
+  if n <= 1:
+    return False
+  if n == 2:
+    return True
+  div = 2
+  while div * div <= n:
+    if n % div == 0:
+      return False
+    div = div + 1
   
 '''
 Returneaza produsul numerelor din lista lst.
